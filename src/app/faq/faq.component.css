@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Open+Sans:wght@300&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+.main {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Baloo Bhaina 2', cursive;
+    background-color: #FFF8DC;
+    margin-bottom: 120px;
+}
+
+.container-fluid{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.container-fluid h1{
+    color: rgb(198, 59, 64);
+    position: relative;
+    /* width: 23rem; */
+}
+
+.container-fluid h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 420px;
+    height: 2px;
+    background-color:rgb(198, 59, 64);
+}
+
+.accordion{
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid #6db5ff;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.accordion .icon{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    text-align: center;
+    
+    margin: 0 10px 0 0;
+    width: 26px;
+    height: 26px;
+    background: no-repeat 8px 7px #2a649e;
+    border-radius: 50%;
+    transition: all .5s ease-in;
+
+}
+
+.accordion h5 {
+    font-size: 22px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color: #1f5c9a;
+
+}
+
+.panel {
+    padding: 0 15px;
+    border-left: 1px solid #6db5ff;
+    margin-left: 25px;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 300px;
+    transition: all .5s ease-in;
+}
+
+p{
+    font-weight: bold   ;
+}

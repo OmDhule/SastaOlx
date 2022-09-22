@@ -1,0 +1,52 @@
+h1{
+    text-align: center;
+    font-family: cursive;
+}
+:root {
+    --background:#1effc3;
+    --primary: #ff1ead;
+    --secondary: #1effc3;
+    --card-size: 300px;
+}
+
+.card {
+    margin-left: 500px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    position: relative;
+    top: -10px;
+    
+    width: 500px;
+    height: 500px;
+    border-radius: 0.75rem;
+    box-shadow: 0 22px 70px 4px rgba(0, 0, 0, 0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+    background: black;
+    display: grid;
+    grid-template-columns: 40% auto;
+    color: white;
+    align-items: center;
+    will-change: transform;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 32px 80px 14px rgba(0, 0, 0, 0.36), 0 0 0 1px rgba(0, 0, 0, 0.3);
+}
+.card-details {
+    padding: 1rem;
+}
+.name {
+    font-size: 1.25rem;
+}
+.occupation {
+    font-weight: 600;
+    color: var(--primary);
+}
+.card-avatar {
+    display: grid;
+    place-items: center;
+}
+svg {
+    fill: white;
+    width: 65%;
+}

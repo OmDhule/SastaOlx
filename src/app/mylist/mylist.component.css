@@ -1,0 +1,308 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
+
+body {
+  background: linear-gradient(45deg, rgb(167, 250, 250), rgb(234, 190, 108));
+  /* background-attachment: fixed;  */
+  background-size: cover;
+  margin: 0;
+	padding: 0;
+  }
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+#container{
+  box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+  background: rgba(255, 255, 255, 0.90);
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 5em auto;
+  height: 350px;
+  width: 700px;
+  
+}
+
+
+
+/*  Product details  */
+.product-details {
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  padding: 30px;
+  height: 100%;
+  float: left;
+  width: 40%;
+
+}
+
+/*  Product Name */
+#container .product-details h1{
+  font-family: 'Old Standard TT', serif;
+  display: inline-block;
+  position: relative;
+  font-size: 34px;
+  color: #344055;
+  margin: 0;
+  
+}
+
+/* #container .product-details h1:before{
+  position: absolute;
+  content: '';
+  right: 0%; 
+  top: 0%;
+  transform: translate(25px, -15px);
+  font-family: 'Farsan', cursive;
+  display: inline-block;
+  background: #FFA69E;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 5px;
+  color: #FFF;
+  margin: 0;
+  animation: chan-sh 6s ease infinite;
+
+} */
+
+
+@keyframes chan-sh {
+  from  {content: 'free shipping';}
+  to  {content: 'New';}
+  
+}
+
+/*Product Rating  */
+.hint-star {
+  display: inline-block;
+  margin-left: 0.5em;
+  color: gold;
+  width: 50%;
+  font-weight: bold;
+}
+
+
+/* The most important information about the product */
+#container .product-details > p {
+  font-family: 'Farsan', cursive;
+  text-align: center;
+  font-size: 20px;
+  color: #7d7d7d;
+  
+}
+
+/* control */
+
+.control{
+  position: absolute;
+  bottom: 20%;
+  left: 22.8%;
+  
+}
+/* the Button */
+.btn{
+    border-radius: .4em;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    border: 1px;
+    transition: .4s ease-in;
+    z-index: 1;
+    height: 50px;
+    width: 120px;
+    font-family: cursive;
+}
+
+.btn:hover{
+    background: #ff96ad;
+    box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+}
+
+.btn-edit{
+    border-radius: .4em;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    border: 1px;
+    transition: .4s ease-in;
+    z-index: 1;
+    font-family: cursive;
+    height: 50px;
+    width: 120px;
+}
+
+.btn-edit:hover{
+    background: gold;
+    box-shadow: 0 0 5px yellow, 0 0 25px yellow, 0 0 50px yellow, 0 0 200px yellow;
+}
+
+.btn-mas{
+    border-radius: .4em;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    border: 1px;
+    transition: .4s ease-in;
+    z-index: 1;
+    height: 50px;
+    width: 120px;
+}
+
+.btn-mas:hover{
+    background: green;
+    box-shadow: 0 0 5px green, 0 0 25px green, 0 0 50px green, 0 0 200px green;
+}
+
+/* .btn span {
+  font-family: 'Farsan', cursive;
+  transition: transform 0.3s;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  margin:0;
+  
+} */
+/* shopping cart icon */
+.btn .price, .shopping-cart{
+  background: #333;
+  border: 0;
+  margin: 0;
+}
+
+.btn .price {
+  transform: translateX(-10%); padding-right: 15px;
+}
+
+/* the Icon */
+.btn .shopping-cart {
+  transform: translateX(-100%);
+  position: absolute;
+  background: #333;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+/* buy */
+/* .btn .buy {z-index: 3; font-weight: bolder;}
+
+.btn:hover .price {transform: translateX(-110%);}
+
+.btn:hover .shopping-cart {transform: translateX(0%);} */
+
+
+
+/* product image  */
+.product-image {
+  transition: all 0.3s ease-out;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  float: right;
+  width: 50%;
+  display: inline-block;
+}
+
+#container img {width: 100%;height: 100%;}
+
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: 'Farsan', cursive;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.9;
+    text-align: left;
+    font-size: 120%;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info h2 {text-align: center}
+.product-image:hover .info{transform: translateX(0);}
+
+.info ul li{transition: 0.3s ease;}
+.info ul li:hover{transform: translateX(50px) scale(1.3);}
+
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.2, 1.2);}
+
+.button-85 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-left: 1330px;
+    margin-top: 30px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-85:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    right: 0;
+    top: 0;
+    border-radius: 10px;
+  }

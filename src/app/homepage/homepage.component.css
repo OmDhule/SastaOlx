@@ -1,0 +1,87 @@
+h2 {
+    animation-duration: 3s;
+    animation-name: slidein;
+    font-family: cursive;
+    background: linear-gradient(45deg, rgb(167, 250, 250), rgb(234, 190, 108));
+}
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+.container{
+    width:100%;
+    height:180vh;
+    background: linear-gradient(45deg, rgb(167, 250, 250), rgb(234, 190, 108));
+    /* ,url(../../assets/background.jpg) */
+    background-position : center;
+    background-size: cover;
+
+}
+
+.datePipe{
+    color: white;
+    font-size: 18px;
+    text-align:center;
+}
+
+
+.carousel{
+    padding-top: 10px;
+}
+
+.card{
+    border: 1px solid white;
+    width:230px;
+    height:260px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    /* background-image: url(../../assets/banner3.jpg); */
+    transition: transform 0.5s;
+}
+
+.card:hover{
+    transform: translateY(-10px)
+}
+
+.col{
+    align-items: center;
+    margin-left: 330px;
+    margin-top: 40px;
+}
+
+.card1{
+  background-image: url(../../assets/faq_i.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+ 
+}
+.card2{
+  background-image: url(../../assets/newoff.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
+}
+.card3{
+  background-image: url(../../assets/feedback.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
+}

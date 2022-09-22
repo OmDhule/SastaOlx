@@ -1,0 +1,61 @@
+<div class="body">
+    <body>
+        <div class="container">
+            <form #f = "ngForm" (ngSubmit)="onSubmit(f.value)">
+            <div class="label">
+                <h1>List your Product</h1>
+            </div>
+            <br>
+            <br>
+            <div class="user-details">
+                <div class="input-box">
+                    <span>Name:</span>
+                    <input type="text" id="name" name="fname" ngModel>
+                </div>
+                <br>
+                <div class="input-box">
+                    <span>Desciption:</span>
+                    <input type="text" id="Desciption" name="description" ngModel>
+                </div>
+                <br>
+                <div class="input-box">
+                    <span>Price:</span>
+                    <input type="text" id="price" name="price" ngModel>
+                </div>
+                <br>
+                <div class="input-box">
+                    <span>Manufacturer:</span>
+                    <input type="text" id="Manufacturer" name="manufacturer" ngModel>
+                </div>
+                <br>
+                <div class="input-box">
+                    <span>Model:</span>
+                    <input type="text" id="model" name="model" ngModel>
+                </div>
+                <br>
+                <div class="input-box">
+                    <span>Year:</span>
+                    <input type="text" id="year" name="year" ngModel>
+                </div>
+                <br>
+                <div class="input-box">
+                    <span>Location:</span>
+                    <input type="text" id="location" name="location" ngModel>
+                </div>
+                <br>
+                <!-- <div class="">
+                    <span>Photo:</span>
+                    <input type="file" id="photo" name="Photo" [(ngModel)]="productDetails.photo" >
+                    <br>
+                    <div>
+                       <span>Photos Uploaded:</span>
+                       {{productDetails.name}}{{productDetails.photo}}
+                    </div>
+                <br>
+                </div> -->
+                <button type="submit" routerLink="/mylist" routerLinkActive="active" class="button" >Add Product</button>
+            </div>
+        </form>
+        </div>
+    </body>
+</div>

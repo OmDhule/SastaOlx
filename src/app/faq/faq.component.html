@@ -1,0 +1,27 @@
+  <div class="main">
+    <div class="container-fluid">
+        <h1>Frequently Asked Questions (FAQs)</h1>
+        <div *ngFor="let question of faq; index as i">
+            <div (click)="toggle(i)" class="accordion">
+                <div class="icon"><i class="plusMinus">{{question.buttonn}}</i></div>
+                <h5>{{ question.Q }}</h5>
+            </div>
+            <div class="panel">
+                <p>
+                    <ng-container *ngIf="question.toggle">
+                        {{ question.A }}
+                    </ng-container>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="text-align:center">
+
+        <h3>For More Queries
+            Contact Us At
+        </h3>
+        <i class="fa-solid fa-envelope">&nbsp;customer.support@barkyaolx.in</i> <br>
+    </div>
+</div>

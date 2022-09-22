@@ -1,0 +1,42 @@
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="header.component.css" />
+ </head>
+ <body>
+   <nav class="navbar">
+     <!-- LOGO -->
+     <div class="logo">
+       <a href="/" style="color: white;" routerLink="/homepage" routerLinkActive="active">{{title | titlecase}}</a>
+     </div>
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+       <!-- USING CHECKBOX HACK -->
+       <input type="checkbox" id="checkbox_toggle" />
+       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+         <li><a href="/" routerLink="/mylist" routerLinkActive="active" >MyListing</a></li>
+         <li><a href="/" routerLink="/login" routerLinkActive="active" >Login</a></li>
+         <li class="services">
+           <a href="/" routerLink="/categ" routerLinkActive="active" >Categories</a>
+           <!-- <ul class="dropdown">
+             <li><a href="/" routerLink="/electronics" routerLinkActive="active">Electronics </a></li>
+             <li><a href="/" routerLink="/automobile" routerLinkActive="active">Automobiles</a></li>
+             <li><a href="/" routerLink="/furniture" routerLinkActive="active">Furniture</a></li>
+           </ul> -->
+         </li>
+         <li><a href="/" routerLink="/aboutus" routerLinkActive="active" >About Us</a></li>
+         <li><div class="search">
+          <input type="text" class="searchTerm" placeholder="What are you looking for?">
+          <button type="submit" class="searchButton">
+            <i class="fa fa-search"></i>
+         </button>
+       </div>
+       </li>
+       <li><a href="/" routerLink="/profile" routerLinkActive="active"><i class="fa fa-user-circle fa-2x"></i></a></li>
+       </div>
+     </ul>
+   </nav>
+ </body>
