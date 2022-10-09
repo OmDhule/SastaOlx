@@ -183,7 +183,7 @@ background: #DFC2F2;
     line-height: 1.9;
     text-align: left;
     font-size: 120%;
-    cursor: no-drop;
+    cursor: pointer;
     color: #FFF;
     height: 100%;
     width: 100%;
