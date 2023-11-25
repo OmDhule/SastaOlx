@@ -1,36 +1,53 @@
 <div class="container">
-    <div class="carousel">
-        <app-image-slider [images]="images"></app-image-slider>
-    <br>
+  <div class="carousel">
+    <app-image-slider [images]="images"></app-image-slider>
+    <br />
+  </div>
+  <div class="datePipe">
+    <h2>
+      {{ myDate | date: "fullDate" }}&nbsp; {{ myDate | date: "shortTime" }}
+    </h2>
+  </div>
+  <div class="col">
+    <div
+      class="card card1"
+      [ngStyle]="{
+        'background-image': 'url({{../../assets/faq_i.jpg}}) solid',
+        color: 'white'
+      }"
+      routerLink="/faq"
+      routerLinkActive="active"
+    ></div>
+    <div
+      class="card card2"
+      [ngStyle]="{ 'background-color': 'red', color: 'white' }"
+      routerLink="/offers"
+      routerLinkActive="active"
+    >
+      <!-- [ngStyle]="{backgroundColour: getColour()}" -->
     </div>
-    <div class="datePipe">
-        <h2>{{myDate | date:'fullDate'}}&nbsp;
-            {{myDate | date : 'shortTime'}}</h2>
-        </div>
-    <div class="col">
-        <div class="card card1" [ngStyle]="{'background-image':'url({{../../assets/faq_i.jpg}}) solid', 'color':'white'}" routerLink="/faq" routerLinkActive="active">
-            
-        </div>
-    <div class="card card2"[ngStyle]="{'background-color':'red', 'color':'white'}" routerLink="/offers" routerLinkActive="active">
-        <!-- [ngStyle]="{backgroundColour: getColour()}" -->
-        </div>
-        <div class="card card3" onclick="location.href='https://forms.gle/2P6CB9VwMCUFbHGz5'" [ngStyle]="{'background-color':'green', 'color':'white'}">
-        </div>
-
-    </div>
-    <br>
-    <br>
-<div class="saleBanner">
+    <div
+      class="card card3"
+      onclick="location.href='https://forms.gle/2P6CB9VwMCUFbHGz5'"
+      [ngStyle]="{ 'background-color': 'green', color: 'white' }"
+    ></div>
+  </div>
+  <br />
+  <br />
+  <div class="saleBanner">
     <img
-        routerLink="/profile"
-        src="../../assets/sale.png"
-        alt="saleBanner"
-        style="width:100%; height: 250px;margin-top:180px;border-radius: 10px; cursor: pointer;
-        "
+      routerLink="/profile"
+      src="../../assets/sale.png"
+      alt="saleBanner"
+      style="
+        width: 100%;
+        height: 250px;
+        margin-top: 180px;
+        border-radius: 10px;
+        cursor: pointer;
+      "
     />
+  </div>
 </div>
-
-</div>
-
 
 <router-outlet></router-outlet>

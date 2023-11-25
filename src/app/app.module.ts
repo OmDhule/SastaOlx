@@ -21,6 +21,8 @@ import { ListformComponent } from './listform/listform.component';
 import { DummyComponent } from './dummy/dummy.component';
 import { FaqComponent } from './faq/faq.component';
 import { OffersComponent } from './offers/offers.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { MyListingComponent } from './my-listing/my-listing.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { OffersComponent } from './offers/offers.component';
     DummyComponent,
     FaqComponent,
     OffersComponent,
+    ProfilePageComponent,
+    MyListingComponent,
   ],
   imports: [
     BrowserModule,
